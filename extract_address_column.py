@@ -8,8 +8,10 @@ import pandas as pd
 def extract_address_column(path):
     df = pd.read_csv(path)
     addresses = df['address'].tolist()
-    with open('addresses.json', 'w') as f:
-        f.write(json.dumps(addresses, indent=1))
+
+    with open('addresses.txt', 'w') as f:
+        for address in addresses:
+            f.write(f"{address}\n")
 
 if __name__ == "__main__":
     # Create the parser
