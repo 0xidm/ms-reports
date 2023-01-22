@@ -23,7 +23,10 @@ In other words, we hope this snapshot captured all the PILLS holders, even if th
 
 [You can view the snapshot as a CSV file.](pills-snapshot.csv)
 
-Please use case-insensitive search with EVM-style addresses so the address checksum does not interfere.
+If you just want to check for the presence of your address, [this file contains just addresses](addresses.txt)
+
+Consider using case-insensitive search because all addresses are represented with [EIP-55 mixed case checksums](https://eips.ethereum.org/EIPS/eip-55).
+Otherwise, you must search for your EIP-55 checksummed address, which has lower- and uppwer-case letters.
 
 ## About the notebooks
 
