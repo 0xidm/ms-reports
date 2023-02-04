@@ -1,0 +1,5 @@
+jupyterlab
+python-dotenv
+pandas
+web3
+charset_normalizer==3.0.1
