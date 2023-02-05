@@ -21,24 +21,16 @@ In other words, we hope this snapshot captured all the PILLS holders, even if th
 
 ## Snapshot
 
-[You can view the snapshot as a CSV file.](pills-snapshot.csv)
+[You can view the snapshot as a CSV file.](data/pills-snapshot.csv)
 
-If you just want to check for the presence of your address, [this file contains just addresses](addresses.txt)
+If you just want to check for the presence of your address, [this file contains just addresses](data/addresses.txt)
 
 Consider using case-insensitive search because all addresses are represented with [EIP-55 mixed case checksums](https://eips.ethereum.org/EIPS/eip-55).
 Otherwise, you must search for your EIP-55 checksummed address, which has lower- and uppwer-case letters.
 
-## About the notebooks
+[The airdrop proportions are available here](data/airdrop.csv).
 
-The notebooks were created in the following order:
-
-- Archival: this notebook describes a method for querying a Fantom Archival node to query the PILLS ERC-20.
-- UTXO: I explored whether the bitcoin UTXO model could be applied to Fantom transactions to detect PILLS in contracts
-- Analysis: Some cursory exploration of the data
-- Sankey: A plot that shows the flow of PILLS that were allocated in the snapshot
-- Snapshot: Creating the CSV file itself
-
-These notebooks are sometimes messy - so these could be discussed on discord to answer questions.
+Finally, [address changes are recorded here](data/address-changes.csv). This occurs when the address from the snapshot is not a current address that should receive airdrop tokens. You must manually report any such changes to the team and provide proof of address control.
 
 ## Disclaimer
 
